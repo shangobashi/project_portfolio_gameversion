@@ -13,7 +13,7 @@ export const dialogueData = {
   gameConsole: `That's my Gaming Setup. I've only gotten interested in video games in earnest during my third decade. And boy, did I go deep. I literally played everything that ever came out and that was interesting at least once, since then.
   And truth be told, I'm not stopping there. Right now, I do have to admit that I have a few favorites that I might have finished for some, or am still playing for most, or am totally stuck at for a few. These includes mainly: Cyberpunk 2077, Black Myth Wukong, Final Fantasy VII, Elden Ring, Clair Obscur 33, and a few others.`,
   bed: `This where I sleep. Sometimes. Most times, I sleep in front of my computers. If I'm not programming, or learning to program better, I am watching the cryptomarkets, scalping like a wild trader as if my life depended on it. I'm a thrill-addicted degen at heart.`,
-  resume: `This is my desk and on it is my resume. <a href="https://github.com/shangobashi/project_portfolio_gameVersion/public/resume.pdf" target="_blank">Check it out!</a>
+  resume: `This is my desk and on it is my resume. <a href="https://github.com/shangobashi/project_portfolio_gameVersion/blob/main/public/resume.pdf" target="_blank">Check it out!</a>
   & DO Contact me at shangobashi@gmail.com if you have any interesting job opportunities!`,
   computer_right: `Info about this portfolio : It's made with the Kaplay.js library which is a library for making games in JavaScript.
   Text is rendered with HTML/CSS. So the textbox you're currently reading is not rendered within canvas.`,
