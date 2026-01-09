@@ -1,0 +1,222 @@
+FOR CODEX
+
+TASK
+
+You are expanding an existing top-down, 16×16, pixel-perfect game by creating a town outside the player’s house.
+
+You must steal the essence of Eastward and Sea of Stars — design philosophy only, not assets, layouts, or motifs — and distill it into a town that fits this world.
+
+You are responsible for:
+
+spatial layout
+
+flow and pacing
+
+mystery and revelation
+
+defining exact asset needs
+
+integrating assets once generated
+
+You are not responsible for drawing pixels.
+
+HARD CONSTRAINTS (DO NOT VIOLATE)
+
+Tile size: 16×16
+
+Camera: top-down orthographic
+
+Rendering: pixel-perfect
+
+Do not change player scale, movement, or collision rules
+
+Do not introduce isometric or perspective tricks
+
+Do not expose the entire town at once
+
+Do not invent assets without declaring them in a manifest
+
+WORLD PHILOSOPHY (MANDATORY)
+Interior vs Exterior Rule
+
+Inside the house: safe, warm, legible
+
+Outside the house: mysterious, quiet, slightly uncanny
+
+The exterior world must feel:
+
+older than the player
+
+partially obscured
+
+calm but not fully explained
+
+Mystery comes from structure, occlusion, and silence, not enemies or fog.
+
+TOWN DESIGN PRINCIPLES
+1. Spatial Structure (Eastward-derived)
+
+The town is not one open map
+
+It is a sequence of bounded spaces:
+
+a path
+
+a bend
+
+a courtyard
+
+a narrow street
+
+Use buildings, trees, walls, elevation bands to block sightlines
+
+The player must never see the whole town at once
+
+2. Occlusion & Layering
+
+Foreground layers are intentional:
+
+roofs
+
+trees
+
+arches
+
+Player may pass partially behind objects
+
+What is hidden matters as much as what is shown
+
+3. Composition (Sea-of-Stars-derived)
+
+Treat each screen as a composed image
+
+Limit tile variety per screen
+
+Avoid visual noise
+
+Use negative space deliberately
+
+COLOR & LIGHTING RULES
+Palette
+
+Exterior palette: cooler, muted, restrained
+
+Interior palette: warmer, higher contrast
+
+Palette shifts must be gradual, never abrupt
+
+Lighting
+
+Lighting is emotional, not realistic
+
+Use:
+
+warm windows
+
+dim lamps
+
+subtle ambient tint
+
+No full-screen brightness
+
+Darkness is allowed and encouraged
+
+NPC DESIGN
+
+Fewer NPCs, more intention
+
+NPCs belong to spaces, not mechanics
+
+Idle animations only, subtle
+
+Dialogue (if any) is mundane or oblique
+
+NPCs must not explain the town
+
+CONSTRUCTION HEURISTICS (MANDATORY)
+A. Screen Budget Rule
+
+Each screen may introduce one new idea only:
+
+a prop type
+
+a structure
+
+a lighting cue
+
+B. Occlusion-First Rule
+
+Decide what a screen hides before decorating it.
+
+C. Landmark Scarcity
+
+One true landmark in the town
+
+Do not explain it
+
+D. Exit Pressure
+
+The town should subtly suggest paths outward, not inward.
+
+REQUIRED OUTPUTS
+1. Town Layout
+
+Map structure compatible with the existing engine
+
+Clear screen/area boundaries
+
+Entry, progression, exit logic
+
+2. ASSET MANIFEST (CRITICAL)
+
+Produce a strict asset manifest listing only what is required, e.g.:
+
+ASSET SET: Town Exterior v1
+
+Tile size: 16x16
+Palette: exterior_cool_v1
+
+Ground:
+- grass_base (2 variants)
+- dirt_path (3 variants, seamless)
+
+Structures:
+- house_small_A (roof occludes player)
+- house_medium_B
+
+Props:
+- lamp_post_lit
+- wooden_sign_blank
+- crate_stack
+
+Nature:
+- tree_canopy_foreground
+- bush_low
+
+NPCs:
+- villager_idle_A
+
+
+No asset outside this list may be used.
+
+3. Integration Notes
+
+Foreground vs background usage
+
+Collision expectations
+
+Palette usage per area
+
+FINAL SELF-CHECK (REQUIRED)
+
+Answer in comments:
+
+What does this town refuse to show?
+
+Where is the player guided without being told?
+
+Which screen works even if all NPCs are removed?
+
+If unsure, revise.
+
+Ship only when all answers are clear.
